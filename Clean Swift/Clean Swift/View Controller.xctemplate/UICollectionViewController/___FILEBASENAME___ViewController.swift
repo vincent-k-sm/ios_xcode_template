@@ -15,7 +15,10 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
   var router: (NSObjectProtocol & ___VARIABLE_sceneName___RoutingLogic & ___VARIABLE_sceneName___DataPassing)?
 
     // MARK: Object lifecycle
-
+    convenience init() {
+        self.init(nibName: nil, bundle: nil)
+    }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
