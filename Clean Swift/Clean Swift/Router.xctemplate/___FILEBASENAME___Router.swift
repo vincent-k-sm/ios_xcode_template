@@ -17,6 +17,9 @@ class ___VARIABLE_sceneName___Router: NSObject, ___VARIABLE_sceneName___RoutingL
     weak var viewController: ___VARIABLE_sceneName___ViewController?
     var dataStore: ___VARIABLE_sceneName___DataStore?
 
+    deinit {
+        //
+    }
 // MARK: Routing (navigating to other screens)
 
 //func routeToSomewhere(segue: UIStoryboardSegue?) {

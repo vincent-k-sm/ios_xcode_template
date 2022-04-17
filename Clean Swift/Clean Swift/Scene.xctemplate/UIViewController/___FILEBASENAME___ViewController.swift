@@ -28,6 +28,10 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
         super.init(coder: aDecoder)
         setup()
     }
+    
+    deinit {
+        //
+    }
 
     // MARK: - Setup Clean Code Design Pattern 
 

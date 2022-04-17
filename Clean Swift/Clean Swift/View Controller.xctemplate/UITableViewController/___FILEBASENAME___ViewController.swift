@@ -28,6 +28,10 @@ class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE
         super.init(coder: aDecoder)
         setup()
     }
+    
+    deinit {
+        //
+    }
   
     // MARK: - Setup Clean Code Design Pattern
 

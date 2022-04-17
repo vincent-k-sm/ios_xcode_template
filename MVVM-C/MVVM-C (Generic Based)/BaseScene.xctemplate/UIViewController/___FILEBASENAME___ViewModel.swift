@@ -23,24 +23,24 @@ class ___VARIABLE_viewModelName___: BaseViewModel<___VARIABLE_viewModelName___In
     }
     
     private func prepareViewModel() {
-     
+        //
     }
     
     deinit {
-        Debug.print("")
+        //
     }
 }
 
 // MARK: - Event
 extension ___VARIABLE_viewModelName___ {
     private func setEvent() {
-        
+        //
     }
 }
 
 // MARK: - Data
 extension ___VARIABLE_viewModelName___ {
     private func setData() {
-        
+        //
     }
 }

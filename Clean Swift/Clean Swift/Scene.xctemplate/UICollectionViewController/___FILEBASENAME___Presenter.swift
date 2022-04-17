@@ -14,6 +14,10 @@ class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLog
 
     // MARK: Parse and calc respnse from ___VARIABLE_sceneName___Interactor and send simple view model to ___VARIABLE_sceneName___ViewController to be displayed
 
+    deinit {
+        //
+    }
+    
     func presentSomething(response: ___VARIABLE_sceneName___.Something.Response) {
         let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
         viewController?.displaySomething(viewModel: viewModel)

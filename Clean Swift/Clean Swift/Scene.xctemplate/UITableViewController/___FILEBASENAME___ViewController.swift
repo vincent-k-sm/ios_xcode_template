@@ -29,6 +29,10 @@ class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE
         setup()
     }
   
+    deinit {
+        //
+    }
+    
     // MARK: - Setup Clean Code Design Pattern
 
     private func setup() {

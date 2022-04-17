@@ -19,6 +19,9 @@ class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic,
     var worker: ___VARIABLE_sceneName___Worker?
     //var name: String = ""
 
+    deinit {
+        //
+    }
     // MARK: Do something (and send response to ___VARIABLE_sceneName___Presenter)
 
     func doSomething(request: ___VARIABLE_sceneName___.Something.Request) {
