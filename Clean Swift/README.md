@@ -5,6 +5,7 @@ Clean Swift (a.k.a VIP) is Uncle Bob’s Clean Architecture applied to iOS and M
 # Installation
 1. Move to dirctory `cd Clean Swfit`
 2. run makeFile `make install_templates`
+- Locate to : `~/Library/Developer/Xcode/Templates/File\ Templates` 
 3. Finish
 
 # UnInstallation
