@@ -20,10 +20,6 @@ class ___VARIABLE_sceneName___Router: NSObject, ___VARIABLE_sceneName___RoutingL
     deinit {
         //
     }
-    
-
-
-
 }
 
 extension ___VARIABLE_sceneName___Router {

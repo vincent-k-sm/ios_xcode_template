@@ -28,11 +28,11 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
         super.init(coder: aDecoder)
         setup()
     }
-    
+
     deinit {
         //
     }
-
+    
     // MARK: - Setup Clean Code Design Pattern 
 
     private func setup() {
@@ -64,40 +64,24 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
     override func viewDidLoad() {
         super.viewDidLoad()
         doSomething()
-//        doSomethingElse()
-    }
-    
-    //MARK: - receive events from UI
-    
-    //@IBOutlet weak var nameTextField: UITextField!
-//
-//    @IBAction func someButtonTapped(_ sender: Any) {
-//
-//    }
-//
-//    @IBAction func otherButtonTapped(_ sender: Any) {
-//
-//    }
-    
-    // MARK: - request data from ___VARIABLE_sceneName___Interactor
 
+    }
+
+}
+
+// MARK: - request data from ___VARIABLE_sceneName___Interactor
+extension ___VARIABLE_sceneName___ViewController {
     func doSomething() {
         let request = ___VARIABLE_sceneName___.Something.Request()
         interactor?.doSomething(request: request)
     }
-//
-//    func doSomethingElse() {
-//        let request = ___VARIABLE_sceneName___.SomethingElse.Request()
-//        interactor?.doSomethingElse(request: request)
-//    }
 
-    // MARK: - display view model from ___VARIABLE_sceneName___Presenter
+}
 
+// MARK: - display view model from ___VARIABLE_sceneName___Presenter
+extension ___VARIABLE_sceneName___ViewController {
     func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
         //nameTextField.text = viewModel.name
     }
-//
-//    func displaySomethingElse(viewModel: ___VARIABLE_sceneName___.SomethingElse.ViewModel) {
-//        // do sometingElse with viewModel
-//    }
+
 }
