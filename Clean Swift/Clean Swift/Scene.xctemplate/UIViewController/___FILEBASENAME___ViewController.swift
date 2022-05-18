@@ -10,7 +10,7 @@ protocol ___VARIABLE_sceneName___DisplayLogic: AnyObject {
 //    func displaySomethingElse(viewModel: ___VARIABLE_sceneName___.SomethingElse.ViewModel)
 }
 
-class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___DisplayLogic {
+class ___VARIABLE_sceneName___ViewController: UIViewController {
     var interactor: ___VARIABLE_sceneName___BusinessLogic?
     var router: (NSObjectProtocol & ___VARIABLE_sceneName___RoutingLogic & ___VARIABLE_sceneName___DataPassing)?
 
@@ -79,7 +79,7 @@ extension ___VARIABLE_sceneName___ViewController {
 }
 
 // MARK: - display view model from ___VARIABLE_sceneName___Presenter
-extension ___VARIABLE_sceneName___ViewController {
+extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___DisplayLogic {
     func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
         //nameTextField.text = viewModel.name
     }
