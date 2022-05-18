@@ -14,7 +14,7 @@ protocol ___VARIABLE_sceneName___DataStore {
     //var name: String { get set }
 }
 
-class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic, ___VARIABLE_sceneName___DataStore {
+class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___DataStore {
     var presenter: ___VARIABLE_sceneName___PresentationLogic?
     var worker: ___VARIABLE_sceneName___Worker?
     //var name: String = ""
@@ -22,7 +22,7 @@ class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic,
     deinit {
         //
     }
-    // MARK: Do something (and send response to ___VARIABLE_sceneName___Presenter)
+    
 
     func doSomething(request: ___VARIABLE_sceneName___.Something.Request) {
         worker = ___VARIABLE_sceneName___Worker()
@@ -39,4 +39,9 @@ class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic,
 //        let response = ___VARIABLE_sceneName___.SomethingElse.Response()
 //        presenter?.presentSomethingElse(response: response)
 //    }
+}
+
+// MARK: Do something (and send response to ___VARIABLE_sceneName___Presenter)
+extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic {
+    
 }
